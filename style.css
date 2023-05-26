@@ -1,3 +1,4 @@
+/*Generelt Start*/
 body{
     height: auto;
     width: auto;
@@ -35,13 +36,54 @@ main{
     width: 100%;
     margin: 0 auto;
 }
+.up_btn {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #636674;
+  color: white;
+  margin: 0 auto;
+}
+.phone_btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #636674;
+    color: white;
+    margin: 0 auto;
+}
+
+    
 section{
     max-width: 1000px;
     margin: 0 auto;
 }
+form{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.checkbox{
+    display: flex;
+    flex-wrap: wrap;
+}
 footer{
     background-color: #FF796D;
     color: white;
+    height: 150px;
 }
 .footer_container{
     display: flex;
@@ -62,9 +104,40 @@ footer{
     flex-direction: row;
     justify-content: space-around;
 }
+li{
+    text-decoration: none;
+}
 .vertical_line{
     border-left: 3px solid white;
             height: 20px;
             position:absolute;
             left: 50%;
 }
+.knap{
+    border: solid #636674;
+}
+/*Generelt slut*/
+
+/*Andrea JavaScript start*/
+.dropdown_btn {
+  color: #636674;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  background-color: white;
+  font-family: Gotham,sans-serif;
+}
+
+.dropdown_content {
+  display: none;
+  overflow: hidden;
+}
+/*Andrea JavaScript slut*/
+
+/*Julie JavaScript start*/
+/*Julie JavaScript slut*/
+
+/*Michelle JavaScript start*/
+/*Michelle JavaScript slut*/

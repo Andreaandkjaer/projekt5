@@ -15,24 +15,28 @@ for (i = 0; i < button.length; i++) {
 }
 /*Andrea JavaScript slut*/
 /*Julie JavaScript start*/
-let slideIndex = 0;
-showSlides();
+let slideIndex = 0; 
+showSlides(); 
+function showSlides() { 
+let i; 
+let slides = document.getElementsByClassName("mySlides"); 
+let dots = document.getElementsByClassName("dot"); 
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 3000); // Skifter billeder hver 3 sek.
+  let slidesArray = Array.from(slides); // Opretter et array baseret på objekterne i slides
+  let dotsArray = Array.from(dots); // Opretter et array baseret på objekterne i dots
+
+for (i = 0; i < slidesArray.length; i++) { 
+slidesArray[i].style.display = "none"; 
+} 
+slideIndex++; 
+if (slideIndex > slidesArray.length) {slideIndex = 1} 
+
+for (i = 0; i < dotsArray.length; i++) { 
+dotsArray[i].className = dotsArray[i].className.replace(" active", ""); 
+}
+ slidesArray[slideIndex-1].style.display = "block"; 
+dotsArray[slideIndex-1].className += " active"; 
+setTimeout(showSlides, 3000);//Spiller med 3 sekunders mellemrum
 }
 /*Julie JavaScript slut*/
 /*Michelle JavaScript start*/

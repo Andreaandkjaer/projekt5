@@ -30,13 +30,13 @@ p{
     font-size: 20px;
 }
 h1{
-    font-size: 80px;
+    font-size: 65px;
 }
 h2{
-    font-size: 60px;
+    font-size: 45px;
 }
 h3{
-    font-size: 40px;
+    font-size: 30px;
 }
 @media screen and (min-width: 850px){
         menu{
@@ -44,8 +44,8 @@ h3{
             flex-direction: row;
         }
         p{font-size: 25px;}
-        h1{font-size: 80px;}
-        h2{font-size: 55px;}
+        h1{font-size: 70px;}
+        h2{font-size: 50px;}
         h3{font-size: 35px;}
     }
 main{
@@ -98,6 +98,9 @@ section{
 .onboarding{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.dropdown_btn{
+    text-align: start;
 }
 form{
     display: flex;

@@ -11,6 +11,8 @@ body{
 header{
     background-color: #FF796D;
     color: white;
+    height: 60px ;
+    padding: 20px;
 }
 .header_container{
     display: flex;
@@ -25,16 +27,20 @@ menu{
     justify-content: space-evenly;
     list-style: none;
 }
-@media screen and (min-width: 800px){
-        menu{
-            flex-wrap: nowrap;
-            flex-direction: row;
-        }
-    }
-
 main{
     width: 100%;
     margin: 0 auto;
+}
+.main_img{
+    width: auto;
+    height: 450px;
+    background-color: grey;
+}
+.main_text{
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .up_btn {
   position: fixed;
@@ -43,7 +49,7 @@ main{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #636674;
+  background: #FF5B4C;
   color: white;
   margin: 0 auto;
 }
@@ -54,15 +60,23 @@ main{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #636674;
+    background: #FF5B4C;
     color: white;
     margin: 0 auto;
 }
-
-    
 section{
-    max-width: 1000px;
+    max-width: 750px;
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.preboarding{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.onboarding{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 form{
     display: flex;
@@ -91,31 +105,65 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
-}
-.footer_container_left{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.footer_container_right{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
+    max-width: 750px;
+    margin: 0 auto;
+    padding-top: 15px;
 }
 li{
     text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 15px;
 }
-.vertical_line{
-    border-left: 3px solid white;
-            height: 20px;
-            position:absolute;
-            left: 50%;
+li > a{
+    color: white;
+}
+ol > li{
+    color: #636674;
+}
+.image{
+    height: 300px;
+    width: auto;
+    background-color: gray;
+}
+a{
+    color: #FF5B4C;
 }
 .knap{
     border: solid #636674;
+    width: fit-content;
+    text-align: center;
+    padding: 20px 40px;
+    color: #636674;
 }
+.knap:hover{
+    background-color: #636674;
+    color: white;
+    cursor: pointer;
+	Transition: 200ms ease-in-out;
+}
+.btn_link{
+    text-decoration: none;
+}
+.text_link{
+    text-decoration: none;
+    color: #636674;
+}
+@media screen and (min-width: 850px){
+        menu{
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+        .footer_container{
+            flex-wrap: nowrap ;
+        }
+    }
+@media screen and (min-width: 400px){
+        menu{
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+    } 
 /*Generelt slut*/
 
 /*Andrea JavaScript start*/

@@ -39,26 +39,33 @@ h2{
 h3{
     font-size: 30px;
 }
+h4{
+    font-size: 25px;
+}
 .menu_container_phone{
     display: block;
     padding: 30px;
 }
 .menu_container_web{
     display: none;
-    padding: 30px;
 }
 menu{
     display: flex;
         flex-wrap: nowrap;
             flex-direction: row;
             justify-content: space-between;
-            max-width: 750px;
+            
+}
+menu > li{
+    padding: 17px;
+    text-decoration: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
+    font-size: 18px;
 }
 @media screen and (min-width: 850px){
-        p{font-size: 25px;}
-        h1{font-size: 100px;}
-        h2{font-size: 50px;}
-        h3{font-size: 35px;}
+        
         .menu_container_phone{
         display: none;
         }
@@ -145,6 +152,7 @@ footer{
     color: white;
     height: auto;
     min-height: 150px;
+    font-size: 20px;
 }
 .footer_container{
     display: flex;
@@ -152,22 +160,21 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    max-width: 175px;
+    max-width: 200px;
     margin: 0 auto;
     padding-top: 15px;
 }
 .footer_information{
-    width: 175px;
+    width: 200px;
 }
 .footer_links{
-    width: 175px;
+    width: 200px;
 }
 #linkedin{ 
     font-size:50px;
     padding: 25px 62.5px;
-    width: 175px;
+    width: 200px;
 }
-
 @media screen and (min-width: 420px){
         .footer_container{
             display: flex;
@@ -175,7 +182,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
-    max-width: 350px;
+    max-width: 400px;
     margin: 0 auto;
     padding-top: 15px;
         }
@@ -186,7 +193,7 @@ footer{
             flex-wrap: nowrap;
             flex-direction: row;
             justify-content: space-around;
-            max-width: 750px;
+            max-width: 800px;
         }
         section{
             padding: 0px;
@@ -195,12 +202,11 @@ footer{
             padding: 0px;
         }
 }
-
 li{
     text-decoration: none;
     list-style: none;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
 }
 li > a{
     color: white;
@@ -251,6 +257,9 @@ a{
     margin: 12px;
     font-size:26px;
 }
+video{
+    max-width: 750px;
+}
 /*Generelt slut*/
 /*burger menu*/
 .container {
@@ -299,7 +308,6 @@ a{
 .showMenu {
   transform: translatex(0);
 }
-
 /*Andrea JavaScript start*/
 .dropdown_btn {
   color: #636674;

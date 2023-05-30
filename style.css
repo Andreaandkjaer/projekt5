@@ -11,8 +11,7 @@ body{
 header{
     background-color: #FF796D;
     color: white;
-    height: 60px ;
-    padding: 20px;
+    height: 80px ;
 }
 .header_container{
     display: flex;
@@ -20,21 +19,19 @@ header{
     flex-direction: row;
     justify-content:space-between;
 }
-menu{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-evenly;
+.logo{
+    margin: 10px;
 }
 p{
     font-size: 20px;
 }
 h1{
-    font-size: 65px;
+    font-size: 70px;
     position: absolute;
-  bottom: 400px;
-  right: 16px;
+  bottom: 350px;
+  right: 100px;
   color: white;
+  text-align: end;
 }
 h2{
     font-size: 45px;
@@ -44,13 +41,22 @@ h3{
 }
 .menu_container_phone{
     display: block;
+    padding: 30px;
 }
 .menu_container_web{
     display: none;
+    padding: 30px;
+}
+menu{
+    display: flex;
+        flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 750px;
 }
 @media screen and (min-width: 850px){
         p{font-size: 25px;}
-        h1{font-size: 70px;}
+        h1{font-size: 100px;}
         h2{font-size: 50px;}
         h3{font-size: 35px;}
         .menu_container_phone{
@@ -58,13 +64,6 @@ h3{
         }
         .menu_container_web{
         display: block;
-        }
-        .footer_container{
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            justify-content: space-around;
-            max-width: 750px;
         }
     }
 main{
@@ -74,13 +73,13 @@ main{
 .main_img{
     height: auto;
     width: auto;
-    background-color: grey;
 }
 .main_text{
     max-width: 750px;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 40px;
+    padding: 10px;
 }
 .up_btn {
   position: fixed;
@@ -106,10 +105,10 @@ main{
 }
 section{
     max-width: 750px;
-    margin-left: 10px;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    padding: 10px;
 }
 .preboarding{
     margin-top: 10px;
@@ -144,18 +143,59 @@ input{
 footer{
     background-color: #FF796D;
     color: white;
-    height: 150px;
+    height: auto;
+    min-height: 150px;
 }
 .footer_container{
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    max-width: 60px;
+    max-width: 175px;
     margin: 0 auto;
     padding-top: 15px;
 }
+.footer_information{
+    width: 175px;
+}
+.footer_links{
+    width: 175px;
+}
+#linkedin{ 
+    font-size:50px;
+    padding: 25px 62.5px;
+    width: 175px;
+}
+
+@media screen and (min-width: 420px){
+        .footer_container{
+            display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    max-width: 350px;
+    margin: 0 auto;
+    padding-top: 15px;
+        }
+    }
+@media screen and (min-width: 820px){
+        .footer_container{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-around;
+            max-width: 750px;
+        }
+        section{
+            padding: 0px;
+        }
+        .main_text{
+            padding: 0px;
+        }
+}
+
 li{
     text-decoration: none;
     list-style: none;
@@ -171,10 +211,17 @@ ol > li{
 .image{
     height: auto;
     width: auto;
-    background-color: gray;
 }
 img{
     width: 100%;
+}
+#phone{
+    margin:12px;
+     font-size:30px
+}
+#arrow{
+    margin: 12px;
+    font-size:26px;
 }
 a{
     color: #FF5B4C;
@@ -198,6 +245,11 @@ a{
 .text_link{
     text-decoration: none;
     color: #636674;
+    font-size: 25px;
+}
+#right_arrow{
+    margin: 12px;
+    font-size:26px;
 }
 /*Generelt slut*/
 /*burger menu*/
@@ -223,11 +275,10 @@ a{
   margin-top: 40px;
   margin-bottom: 40px;
   margin-left: auto;
-  color: #707070;
   text-decoration: none;
   width: fit-content;
+     color: white;
 }
-
 .burger {
   width: auto;
   box-shadow: none;
@@ -243,6 +294,7 @@ a{
   list-style: none;
   width: 100%;
   padding: 40px;
+    background-color: #FF796D;
 }
 .showMenu {
   transform: translatex(0);

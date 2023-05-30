@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="pentia.js" defer></script>
     <title>Document</title>
 </head>
@@ -24,12 +25,10 @@
                 <div class="nav">
                     <div class="burgermenu">
                         <ul class="menu">
-                            <li class="menuItem">CASES</li>
-                            <li class="menuItem">SERVICES</li>
-                            <li class="menuItem">KARRIERE</li>
-                            <li class="menuItem">NYT</li>
-                            <li class="menuItem">EVENTS</li>
-                            <li class="menuItem">OM PENTIA</li>
+                            <li class="menuItem"><a href="#rekruttering">Rekruttering</a></li>
+                            <li class="menuItem"><a href="#gode_raad">Gode råd</a></li>
+                            <li class="menuItem"><a href="#om_os">Om os</a></li>
+                            <li class="menuItem"><a href="#kontakt_os">Kontakt os</a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,13 +54,13 @@
                     <div class="mySlides">
                         <img src="billeder/front2.png" style="width:100%" alt="">
                     </div>
+                    <h1>Simply <br>Connect</h1>
                 </div>
                 <br>
                 <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
-                <h1>Simply Connect</h1>
             </div>
             <!-- Julie slut-->
         </div>
@@ -83,10 +82,11 @@
                 Udover at finde den mest kompetente medarbejder til netop din virksomhed,
                 giver vi også gode råd for at dine medarbejdere trives bedst muligt.
             </p>
-            <a href="https://pentia.dk/om-pentia/" class="text_link"><b>Læs mere =></b></a>
+            <a href="https://pentia.dk/om-pentia/" class="text_link"><b>Læs mere <i class="fa fa-arrow-right"
+                        id="right_arrow"></i></b></a>
         </div>
-        <a href="#" class="up_btn"></a>
-        <a href="#kontakt_os" class="phone_btn"></a>
+        <a href="#" class="up_btn"><i class="fa fa-arrow-up" id="arrow"></i></a>
+        <a href="#kontakt_os" class="phone_btn"><i class="fa fa-phone" id="phone"></i></a>
     </main>
     <section id="om_os">
         <h2>Om os</h2>
@@ -102,7 +102,8 @@
             Vi har udviklet dette koncept for at dele vores erfaringer på området med andre
             virksomheder samt hjælpe jer godt på vej.
         </p>
-        <a href="https://pentia.dk/om-pentia/" class="text_link"><b>Læs mere =></b></a>
+        <a href="https://pentia.dk/om-pentia/" class="text_link"><b>Læs mere <i class="fa fa-arrow-right"
+                    id="right_arrow"></i></b></b></a>
     </section>
     <section id="rekruttering">
         <h2>Rekruttering</h2>
@@ -252,6 +253,7 @@
                 </ul>
             </div>
             <div class="linkedin">
+                <i class="fa fa-linkedin-square" id="linkedin"></i>
             </div>
         </div>
     </footer>

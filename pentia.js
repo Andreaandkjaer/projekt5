@@ -13,6 +13,23 @@ for (i = 0; i < button.length; i++) {
     }
   });
 }
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+const menu = document.querySelector(".menu");
+const burger = document.querySelector(".burger");
+
+function Menu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+  } else {
+    menu.classList.add("showMenu");
+  }
+}
+burger.addEventListener("click", Menu);
+
 /*Andrea JavaScript slut*/
 /*Julie JavaScript start*/
 let slideIndex = 0; 

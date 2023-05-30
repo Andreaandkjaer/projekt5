@@ -38,16 +38,32 @@ h2{
 h3{
     font-size: 30px;
 }
+.menu_container_phone{
+    display: block;
+}
+.menu_container_web{
+    display: none;
+}
 @media screen and (min-width: 850px){
-        menu{
-            flex-wrap: nowrap;
-            flex-direction: row;
-        }
         p{font-size: 25px;}
         h1{font-size: 70px;}
         h2{font-size: 50px;}
         h3{font-size: 35px;}
+        .menu_container_phone{
+        display: none;
+        }
+        .menu_container_web{
+        display: block;
+        }
+        .footer_container{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-around;
+            max-width: 750px;
+        }
     }
+    
 main{
     width: 100%;
     margin: 0 auto;
@@ -129,7 +145,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
-    max-width: 750px;
+    max-width: 60px;
     margin: 0 auto;
     padding-top: 15px;
 }
@@ -174,6 +190,53 @@ a{
     color: #636674;
 }
 /*Generelt slut*/
+/*burger menu*/
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1, .bar2 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  transform: translate(0, 5.5px) rotate(-45deg);
+}
+.change .bar2 {
+  transform: translate(0, -5.5px) rotate(45deg);
+}
+.menuItem {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  color: #707070;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.burger {
+  width: auto;
+  box-shadow: none;
+}
+.menu {
+  position: fixed;
+  transform: translatex(100%);
+  transition: transform 0.5s;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  list-style: none;
+  width: 100%;
+  padding: 40px;
+}
+.showMenu {
+  transform: translatex(0);
+}
 
 /*Andrea JavaScript start*/
 .dropdown_btn {

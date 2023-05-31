@@ -222,24 +222,34 @@
     </section>
     <section id="kontakt_os">
         <h2>Kontakt os</h2>
-        <p>Udfyld felterne herunder, så ringer vi dig op snarest muligt - vi ringer altid
-            inden for normal arbejdstid.</p>
-        <form>
-            <input type="text" id="name" placeholder="Navn">
-            <input type="text" id="telefon" placeholder="Telefon">
-            <input type="text" id="virksomhed" placeholder="Virksomhed">
-            <input type="text" id="titel" placeholder="Titel">
-            <textarea id="subject" name="subject" placeholder="Besked"></textarea>
+        <form id="contactForm">
+            <div>
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" re>
+            </div>
+            <div>
+                <label for="Phone">Telefon:</label>
+                <input type="text" id="Phone" name="Phone">
+            </div>
+            <div>
+                <label for="virksomhed">Virksomhed:</label>
+                <input type="text" id="virksomhed" name="virksomhed">
+            </div>
+            <div>
+                <label for="titel">Titel:</label>
+                <input type="text" id="titel" name="titel">
+            </div>
+            <div>
+                <label for="besked">Besked:</label>
+                <textarea id="besked" name="besked"></textarea>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="check">
+                <p>Jeg accepterer privatlivspolitikken.</p>
+            </div>
+            <input type="submit" class="ringop" value="JA TAK, RING MIG OP">
         </form>
-        <div class="checkbox">
-            <input type="checkbox" id="check">
-            <p>Jeg accepterer Pentias privatlivspolitik</p>
-        </div>
-        <div class="knap"><b>JA TAK, RING MIG OP</b></div>
-        <p><b>Hvad bruger I mine oplysninger til?</b> Når du udfylder formularen her,
-            modtager vores Client Management team din henvendelse og kontakter dig
-            direkte. Her kan du læse <a href="https://pentia.dk/om-pentia/privatlivspolitik/" class="text_link2">Pentias
-                privatlivspolitik</a></p>
     </section>
     <footer>
         <div class="footer_container">

@@ -415,4 +415,39 @@ video{
 /*Julie JavaScript slut*/
 
 /*Michelle JavaScript start*/
+form {
+  max-width: auto;
+  margin: 0 auto;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+.ringop{
+  border: solid #636674;
+  width: fit-content;
+  text-align: center;
+  padding: 20px 40px;
+  color: #636674;
+  background-color: white;
+  font-family: Gotham,sans-serif;
+}
+.ringop:hover{
+  background-color: #636674;
+  color: white;
+  cursor: pointer;
+Transition: 200ms ease-in-out;
+}
 /*Michelle JavaScript slut*/

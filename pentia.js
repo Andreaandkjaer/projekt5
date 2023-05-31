@@ -57,4 +57,38 @@ setTimeout(showSlides, 3000);//Spiller med 3 sekunders mellemrum
 }
 /*Julie JavaScript slut*/
 /*Michelle JavaScript start*/
+// Debugging
+console.log("Start of the script");
+
+// Variables
+let contactForm = document.getElementById('contactForm');
+let nameInput = document.getElementById('name');
+let phoneInput = document.getElementById('Phone');
+let companyInput = document.getElementById('virksomhed');
+let titleInput = document.getElementById('titel');
+let messageInput = document.getElementById('besked');
+let checkboxInput = document.getElementById('check');
+
+// Arrays
+let inputFields = [nameInput, phoneInput, companyInput, titleInput, messageInput];
+
+// Loops
+for (let i = 0; i < inputFields.length; i++) {
+  let input = inputFields[i];
+  console.log("Input ID:", input.id);
+}
+
+contactForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form from submitting
+
+  if (nameInput.value === '' || phoneInput.value === '' || companyInput.value === '' ||
+      titleInput.value === '' || messageInput.value === '' || !checkboxInput.checked) {
+    alert('Felterne skal udfyldes');
+  } else {
+    alert('Tak for henvendelsen, du hører fra os!');
+  }
+});
+
+// Debugging
+console.log("End of the script");
 /*Michelle JavaScript slut*/
